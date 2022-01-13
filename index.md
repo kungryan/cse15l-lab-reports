@@ -8,3 +8,6 @@
 * It has a cool computer
 
 This was added offline!
+
+## Lab Report Links  
+[Lab Report 1](lab-report-1-week-2)
