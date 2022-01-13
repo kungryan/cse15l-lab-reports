@@ -5,7 +5,8 @@ This is a screenshot of my index.
 ## Connecting to ieng6  
 Hello incoming 15L students! *(and possibly future me)*  
 This post will demonstrate how **you** can connect to your course-specific acccount on ieng6!  
-**1. Installing VScode**  
+
+## **1. Installing VScode**  
 Download VScode from its website for the platform you are using it on. (I am running it on Windows)  
 ![Image](LR1Wk2Photos/1_1.PNG)  
 Once you have installed it, visit the extension tab and download "Extension Pack for Java" and "Remote - SSH".  
@@ -14,7 +15,8 @@ Once you have installed it, visit the extension tab and download "Extension Pack
 ![Image](LR1Wk2Photos/1_4.PNG)  
 *Note: Mine are already installed so it says "Uninstall" but yours will say Install if you have not already installed it.*  
 Now you are ready to create and send over files!  
-**2. Remotely Connecting**  
+  
+## **2. Remotely Connecting**  
 Because I am on windows, I needed to install OpenSSH which you can do by following the instructions [Here](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)  
 *Note: You can skip this step if you are not on Windows*  
 Next, look up your course account at UCSD's account look up tool [Here](https://sdacs.ucsd.edu/~icc/index.php)  
@@ -33,7 +35,8 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 Type yes and you should see somethng like this:  
 ![Image](LR1Wk2Photos/2_3.PNG)  
 Congratulations! You are now connected to your course-specific account on ieng6!  
-**3. Trying Some Commands**  
+  
+## **3. Trying Some Commands**  
 Test out running some commands! Some commands are:  
 * pwd  
 * ls  
@@ -41,7 +44,8 @@ Test out running some commands! Some commands are:
 ![Image](LR1Wk2Photos/3_1.PNG)  
 To log out type exit.  
 ![Image](LR1Wk2Photos/3_2.PNG)  
-**4. Moving Files with scp**  
+  
+## **4. Moving Files with scp**  
 To begin moving files, start with creating a file that you want to move. I will be moving a WhereAmI.java file with the following code:  
 ```
 class WhereAmI {
@@ -60,7 +64,8 @@ Just like with logging in with ssh, enter your password.
 ![Image](LR1Wk2Photos/4_1.PNG)  
 Once sent, log back into ssh and use ```ls```. Your file should now be in your home directory.  
 ![Image](LR1Wk2Photos/4_2.PNG)  
-**5. Setting an SSH Key**  
+  
+## **5. Setting an SSH Key**  
 To avoid having to type our password everytime we login or run scp, we can set up a SSH key. On your client, type ```ssh-keygen```.  
 Because I am on Windows, I need to follow extra ssh-add steps which can be found [Here](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation)  
 ![Image](LR1Wk2Photos/5_1.PNG)  
@@ -81,7 +86,8 @@ Now, when you log in, you no longer need to use your password.
 ![Image](LR1Wk2Photos/5_4.jpg)  
 **After:**  
 ![Image](LR1Wk2Photos/5_3.PNG)  
-**6. Optimizing Remote Running**  
+  
+## **6. Optimizing Remote Running**  
 You can make remote running more efficient by running certain commands.  
 ![Image](LR1Wk2Photos/6_1.PNG)  
 By using semicolons, you can run multiple commands on the same line and by using "", you can directly run ssh commands on the remote server.  
